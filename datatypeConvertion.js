@@ -1,12 +1,12 @@
-// let a = "";
+let a = "";
  
-// console.log(a);
-// console.log(typeof a);
+console.log(a);
+console.log(typeof a);
 
 
-// let num = Number(a);
-// console.log(num);
-// console.log(typeof num);
+let num = Number(a);
+console.log(num);
+console.log(typeof num);
 
 // convert string to number  by Number()
 // "123" ===> 123
