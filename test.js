@@ -34,7 +34,7 @@ console.log(bbb);  // value qqq
 
 
 // var is funtion variable
-var c = "4569";
+var c = "9999";
 
 // without any datatype it will work 
 xyz = "qirgai";
