@@ -30,7 +30,9 @@ console.log("12" + 4 + 4); // 1244
 console.log(4 + 4 + "12" + 2+2 + "99"); //  8122299
 
 
-
+// ******** Comparison ********
+console.log("2" == 2);  //true     only check numbar
+console.log("2" == 2);  // false    check number and datatype  so it is false
 
 
 
