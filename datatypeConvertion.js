@@ -20,7 +20,7 @@
 // Boolean()
 // String()
 
-// ******** operation  ********
+// ******** operation  *********
 let str1 = "ajay"
 let str2 = "   shakya"
 let str3 = str1+str2;
