@@ -7,3 +7,6 @@
 
 console.log(typeof null) // object
 console.log(typeof undefined) // undefined
+
+
+// stack (primitive),   Heap (Non-primitive)
