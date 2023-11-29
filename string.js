@@ -28,12 +28,35 @@ console.log(sentence.indexOf('fox'));   // 16
 console.log(sentence.indexOf('fox',9));   // 16
 
 
+// str.substring(start,end)
+// end index not include in string
+console.log(sentence.substring(4,9)); // quick
 
-     
+// str.slice(start,end);  same as substring
+// negative value can be use
+console.log(sentence.slice(4,9));  // quick
+console.log(sentence.slice(9,-8));   //     
 
+// str.trim()
+const sen = '   abcd  xyz    '
+console.log(sen);
+console.log(sen.trim());
+console.log(sen.trimStart());
+console.log(sen.trimEnd());
 
+// str.replace()
+const url = "https://abc.com/abhi%20dixit"
+console.log(url.replace('%20','-'));
 
+//  str.includes(substr)  substr is present or not
+console.log(url.includes('abhi'));
+console.log(url.includes('%20dixit'));
+console.log(url.includes('dixita'));
 
+// str.split(substr)
+// str break into part base on substr
+const str = "abc%vbn%fvhhbj%hgvyjhb%ppp%wert"
+console.log(str.split('%')); // reture object
 
 
 
