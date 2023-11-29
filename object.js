@@ -1,4 +1,4 @@
-// object literals
+// object literals  or non-singleton object
 const mysym = Symbol("key1");
 
 const obj = {
@@ -18,6 +18,16 @@ obj.name = "dixit";
 
 // obj value not updata
 Object.freeze(obj);
+
+
+// singleton object
+const obj1 = new Object();
+
+
+
+
+
+
 
 
 
