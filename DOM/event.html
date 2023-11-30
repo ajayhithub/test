@@ -7,15 +7,27 @@
 </head>
 <body>
   <div id="box" class="tt">
-      <h1>apple</h1>
+      <h1 id="box1">apple</h1>
   </div>
 </body>
 <script>
-     document.getElementById('box').addEventListener('click', function (e){
-        console.log(e);
-     },false) // default false 
 
+    // false (down to up) 
+     document.getElementById('box').addEventListener('click', function (e){
+        console.log(`${e} aaaaa`);
+     },false) // default false 
+     document.getElementById('box1').addEventListener('click', function (e){
+        console.log(`${e} bbbbb`);
+        e.stopPropagation() // to stop event
+     },false)
       
+     // true (up to down)
+     document.getElementById('box').addEventListener('click', function (e){
+        console.log(`${e} aaaaa`);
+     },true) // default false 
+     document.getElementById('box1').addEventListener('click', function (e){
+        console.log(`${e} bbbbb`);
+     },true)
 
 
      // type, timestamp, defaultPrevented
