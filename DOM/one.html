@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM LEARN</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .bg-black{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+      <div id="box" class="bg-black">
+            <h1 id="title1" class="heading">learn DOM1</h1>
+            <h1 id="title2" class="heading">learn DOM2</h1>
+            <h1 id="title3" class="heading">learn DOM3</h1>
+            <h1 id="title4" class="heading">learn DOM4</h1>
+            <h1 id="title5" class="heading">learn DOM5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur  maxime, atque repudiandae </p>
+      </div>
+</body>
+<script>
+const sel =  document.getElementById('title1');
+console.log(sel);  //  <h1 id="title1" class="heading">learn DOM1</h1>
+// to get attribute
+console.log(sel.id); //  title1
+console.log(sel.getAttribute('id')); // title1
+console.log(sel.className); //  heading
+console.log(sel.getAttribute('class'));  //  heading
+
+//  to add more attribute
+sel.setAttribute('class','heading heading1 heading2 heading3');
+
+// add style
+sel.style.backgroundColor = "green";
+
+// get content 
+const sel1 =  document.getElementById('box');
+console.log(sel1.textContent); // some content hide by css all will show
+console.log(sel1.innerText);  //  some content hide by css all will not show
+console.log(sel1.innerHTML);  // html code also show
+
+
+document.querySelector('h1'); // select first h1
+document.querySelector('#title2');  // select by id
+document.querySelector('.heading');  // select by class
+
+// select all h1
+const sel2 = document.querySelectorAll('h1');  // return html collection of h1 it is not array
+console.log(sel2);
+
+//select by 
+const sel3 = document.getElementsByClassName('heading');
+console.log(sel3);  // return html collection of h1 it is not array
+
+// html collection convert into array
+const arr = Array.from(sel3);
+console.log(arr);
+
+</script>
+</html>
