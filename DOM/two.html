@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .parent{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="parent">
+     <div class="day">mon</div>
+     <div class="day">tue</div>
+     <div class="day">wed</div>
+     <div class="day">thu</div>
+     <div class="day">fri</div>
+     <div class="day">sat</div>
+     <div class="day">sun</div>
+   </div>
+
+</body>
+<script>
+   const parent = document.querySelector('.parent');
+   console.log(parent);
+   console.log(parent.children); // // return html collection of h1 it is not array
+   console.log(parent.children[0]); // <div class="day">mon</div>
+   console.log(parent.children[1]);  // <div class="day">tue</div>
+</script>
+</html>
