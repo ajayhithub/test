@@ -18,3 +18,5 @@ arr.forEach(fun);
 // arr.forEach((val,ind,arr)=>{
 
 // })
+
+
