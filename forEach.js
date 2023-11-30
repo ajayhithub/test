@@ -19,4 +19,27 @@ arr.forEach(fun);
 
 // })
 
+const arr1 = [1,2,3,4,5,6,7,8];
+
+// filter    return array
+const val = arr1.filter((num) => {
+
+    return num>4;
+})
+console.log(val);
+
+// map   return array
+const val1 = arr1.map((val)=>{
+ 
+       return val*10;
+})
+console.log(val1);
+
+// reduce  
+
+
+
+
+
+
 
