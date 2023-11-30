@@ -52,17 +52,18 @@ document.querySelector('h1'); // select first h1
 document.querySelector('#title2');  // select by id
 document.querySelector('.heading');  // select by class
 
-// select all h1
+// select document.querySelectorAll()
 const sel2 = document.querySelectorAll('h1');  // return html collection of h1 it is not array
 console.log(sel2);
 
-//select by 
+//select by document.getElementsByClassName()
 const sel3 = document.getElementsByClassName('heading');
 console.log(sel3);  // return html collection of h1 it is not array
 
 // html collection convert into array
 const arr = Array.from(sel3);
 console.log(arr);
+
 
 </script>
 </html>
