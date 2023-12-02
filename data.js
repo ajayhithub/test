@@ -1,7 +1,7 @@
 let mydata = new Date(); // type object
  
 
-
+ 
 console.log(mydata); //2023-11-29T06:44:08.073Z
 console.log(mydata.toString());  // Wed Nov 29 2023 12:14:45 GMT+0530 (India Standard Time)
 console.log(mydata.toDateString()); // Wed Nov 29 2023
