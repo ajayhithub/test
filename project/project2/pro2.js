@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const box1 = document.querySelector('.box1');
-let w = -1;
-let h = -1;
+let w;
+let h;
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     w = document.querySelector('#height').value;
