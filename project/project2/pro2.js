@@ -37,8 +37,9 @@ form.addEventListener('submit',(e)=>{
        // box1.appendChild(div); 
     }
     }
-    
-    form.reset();
+
+    form.reset();  //  reset form
+  //  location.reload()// reload page
 })
 
 
