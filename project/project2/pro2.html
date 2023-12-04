@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(255, 255, 255);
+      }
+      .box {
+        background-color: rgb(47, 120, 198);
+        width: 45vw;
+        margin: auto;
+        text-align: center;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #height {
+        width: 33vw;
+        margin: auto;
+      }
+      #weight {
+        width: 33vw;
+        margin: auto;
+      }
+      #submit {
+        width: 22vw;
+        margin: auto;
+      }
+      h4 {
+        margin: 2px;
+      }
+      h1 {
+        margin: 7px;
+      }
+      .box1 {
+        background-color: rgb(47, 198, 95);
+        width: 45vw;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="box">
+      <h1>BMI Calculator</h1>
+      <h4>Height in cm</h4>
+      <input type="number" id="height" />
+      <h4>Weight in kg</h4>
+      <input type="number" id="weight" />
+      <input type="submit" id="submit" />
+    </form>
+    <div class="box1"></div>
+  </body>
+  <script src="pro2.js"></script>
+</html>
