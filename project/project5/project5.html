@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+</body>
+<script>
+const start = document.querySelector('.start');
+const stop = document.querySelector('.stop');
+
+let clear; 
+// console.log(Math.round(Math.random()*100000));
+start.addEventListener('click',()=>{
+
+ clear = setInterval(()=>{
+
+       document.querySelector('body').style.backgroundColor = `#a${Math.round(Math.random()*100000)}`;      
+     },1000)
+})
+
+stop.addEventListener('click',()=>{
+       clearInterval(clear);
+       clear = null;
+})
+
+</script>
+</html>
