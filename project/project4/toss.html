@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: aliceblue;
+    }
+    .box {
+      background-color: #3f9d7d;
+      width: 27vw;
+      text-align: center;
+      margin: auto;
+      height: 215px;
+    }
+
+    .coin {
+      width: 124px;
+      background-color: #dbf376;
+      height: 119px;
+      margin: auto;
+      border-radius: 61px;
+      /* animation-name: example;
+      animation-duration: 4s; */
+    }
+    .coin1 {
+      width: 124px;
+      background-color: #dbf376;
+      height: 119px;
+      margin: auto;
+      border-radius: 61px;
+      animation-name: example;
+      animation-duration: 2s;
+    }
+    @keyframes example {
+      0% {
+        background-color: red;
+      }
+      25% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: blue;
+      }
+      100% {
+        background-color: green;
+      }
+    }
+    .result {
+      position: relative;
+      top: 43px;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <h2>toss a coin</h2>
+      <div class="coin"><h2 class="result">head</h2></div>
+    </div>
+  </body>
+  <script src="toss.js"></script>
+</html>
