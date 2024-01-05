@@ -1,6 +1,6 @@
 
 const btn = document.querySelectorAll('.btn');
-
+console.log(btn);
 const body = document.querySelector('body');
 
 const arr = Array.from(btn);  // html collection convert into array
